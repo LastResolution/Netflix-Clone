@@ -1,0 +1,65 @@
+.Row {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+  background-color: #2b2b2b;
+  box-shadow: 0 0 5px #494949;
+}
+
+.Row-title {
+  margin: 0;
+  padding-bottom: 0 !important;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.Row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  transition: background-color 0.5s;
+}
+
+/* ScrollBar Styling */
+.Row-posters::-webkit-scrollbar {
+  height: 7px;
+}
+
+.Row-posters::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.Row-posters::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b;
+  border-radius: 5px;
+}
+
+.Row-posters::-webkit-scrollbar-thumb:hover {
+  background-color: #5e5e5e;
+}
+/* ScrollBar Styling end */
+
+.Row-poster {
+  object-fit: contain;
+  user-select: none;
+  width: 100%;
+  max-height: 100px;
+  margin: 10px;
+  transition: transform 450ms;
+}
+
+.Row-poster-large {
+  max-height: 250px;
+}
+
+.Row-poster-large:hover {
+  transform: scale(1.09);
+}
+
+.Row-poster:hover {
+  transform: scale(1.08);
+}
